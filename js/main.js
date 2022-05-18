@@ -21,5 +21,10 @@ form.addEventListener('submit', (event)=>{
     data.push(newObj)
     storage.setItem('data', JSON.stringify(data))
     replace(tbody, data)
+
+    ism.value = '';
+    fam.value = '';
+    guruh.value = '';
+    jinsi.value = '';
 })
 replace(tbody, data)
